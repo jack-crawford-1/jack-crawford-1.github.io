@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0 auto;
-  text-decoration: none;
 }
 
 nav {
@@ -13,21 +12,28 @@ nav {
   height: 70px;
   align-items: center;
   justify-content: space-between;
-  background-color: #6c6cb0;
+  background-color: #5080f0;
   z-index: 1;
 }
 
 nav ul {
   display: flex;
-  text-decoration: none;
   list-style: none;
   width: 100%;
 }
 
-nav li {
-  font-size: 40px;
+nav li a {
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: 1.2rem;
 }
 
 header {
   margin-top: 70px;
+}
+
+header,
+main {
+  margin-left: 50px;
+  padding-top: 50px;
 }
