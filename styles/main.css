@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0 auto;
+  font-family: monospace;
 }
 
 nav {
@@ -30,10 +31,27 @@ nav li a {
 
 header {
   margin-top: 70px;
+  height: auto;
+  min-height: 500px;
+  background-color: #2b2c2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin: 20px;
+}
+
+header p {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 header,
 main {
-  margin-left: 50px;
   padding-top: 50px;
 }
