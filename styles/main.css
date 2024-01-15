@@ -113,3 +113,16 @@ header p {
   font-size: 1.2rem;
   line-height: 2rem;
 }
+
+/* Styling for blog article pages*/
+
+.article-h1 h1 {
+  font-size: 5rem;
+  color: navy;
+}
+
+.article-h2 .article-h3 .article-p;
+
+h1 {
+  color: blue;
+}
