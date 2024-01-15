@@ -104,7 +104,7 @@ header p {
 .links-section h2 {
   font-size: 2rem;
   padding-bottom: 30px;
-  margin-top: -20px;
+  margin-top: 10;
 }
 
 .links-section li {
@@ -112,17 +112,4 @@ header p {
   list-style: none;
   font-size: 1.2rem;
   line-height: 2rem;
-}
-
-/* Styling for blog article pages*/
-
-.article-h1 h1 {
-  font-size: 5rem;
-  color: navy;
-}
-
-.article-h2 .article-h3 .article-p;
-
-h1 {
-  color: blue;
 }
