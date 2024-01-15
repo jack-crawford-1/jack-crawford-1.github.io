@@ -31,9 +31,9 @@ nav li a {
 }
 
 header {
-  margin-top: 70px;
+  margin-top: 60px;
   height: auto;
-  min-height: 500px;
+  min-height: 300px;
   background-color: #2b2c2e;
   display: flex;
   flex-direction: column;
@@ -52,20 +52,37 @@ header p {
   line-height: 2rem;
 }
 
-header,
-main {
-  padding-top: 50px;
-}
-
 .about-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 200px;
+  min-height: fit-content;
+  margin-top: 30px;
 }
 
 .about-section p {
-  width: 70%;
+  width: 50%;
   font-size: 1.2rem;
   margin: 20px;
+}
+
+.links-section {
+  display: block;
+  align-items: center;
+  height: fit-content;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.links-section h2 {
+  font-size: 2rem;
+  padding-bottom: 30px;
+  margin-top: -20px;
+}
+
+.links-section li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
