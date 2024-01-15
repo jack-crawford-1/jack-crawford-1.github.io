@@ -1,6 +1,75 @@
 /* Styling for blog article pages*/
 
-.article-h1 {
-  color: blue;
-  font-size: 50px;
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: monospace;
+}
+
+.article-header {
+  margin-top: 60px;
+  height: auto;
+  min-height: 300px;
+  background-color: #2b2c2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.article-header h1 {
+  font-size: 4rem;
+  margin: 20px;
+}
+
+.article-header h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  width: 70%;
+}
+
+.article-header h3 {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 20px;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: fit-content;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.article-content p {
+  width: 50%;
+  font-size: 1.2rem;
+  margin: 20px;
+  line-height: 1.7rem;
+}
+
+.articles-links-section {
+  display: block;
+  align-items: center;
+  height: fit-content;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.articles-links-section h2 {
+  font-size: 2rem;
+  padding-bottom: 30px;
+  margin-top: 10;
+}
+
+.articles-links-section li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
