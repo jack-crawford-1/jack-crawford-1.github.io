@@ -40,6 +40,7 @@ header {
   align-items: center;
   justify-content: center;
   color: white;
+  text-align: center;
 }
 
 header h1 {
@@ -50,6 +51,20 @@ header h1 {
 header p {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+@media screen and (max-width: 770px) {
+  header h1 {
+    margin: 40px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header p {
+    max-width: 70%;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
 }
 
 .about-section {
@@ -64,6 +79,18 @@ header p {
   width: 50%;
   font-size: 1.2rem;
   margin: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  .about-section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .about-section p {
+    width: 70%;
+  }
 }
 
 .links-section {
