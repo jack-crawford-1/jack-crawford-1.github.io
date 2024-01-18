@@ -10,35 +10,69 @@
   <body>
     <header class="article-header">
       <h1>HTML and CSS</h1>
-      <h2>
-        E kore e mau i a koe, he wae kai pakiaka. <br />
-        <em
-          >A foot accustomed to running over roots makes the speediest
-          runner.</em
-        >
-      </h2>
-      <h3>10 November 2010</h3>
+      <h2>What is the difference between Margin, Border, and Padding?</h2>
+      <h3>18 January 2024</h3>
     </header>
     <div class="article-content">
+      <h2>What is the difference between Margin, Border, and Padding?</h2>
       <p>
-        Te Houtaewa was the fastest runner of his day and played many pranks on
-        his peoples enemies. One morning his mother wanted kumara for the hangi
-        (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a
-        short distance away. He agreed to fetch the kumara and told his mother
-        to prepare the hangi.
+        Borders, margins and padding are, put simply, CSS styling that allows
+        developers to move and position different parts (or elements) of a web
+        page. Borders define the edges, margins create space between elements,
+        and padding ensures content within elements is neatly framed and not too
+        close or far from the border.
       </p>
+      <h3>Borders</h3>
       <p>
-        Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara
-        as he wanted to annoy some Te Rarawa people who lived there. Carrying
-        two large baskets for the kumara, he ran like the wind, completing the
-        journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in
-        the few hours it takes a good hangi to heat up properly. On reaching
-        Ahipara, he went straight to the people's kumara pataka (storehouse for
-        the sweet potatoes) situated at the foot of the hill Whangatauatia.
+        The border is the line that wraps around an element. It can be styled in
+        terms of width, colour and style. Below is an example of an element with
+        a border that is 3 pixels wide, coloured green with dashed lines as the
+        style of border.
       </p>
+      <!--<screenshot goes here> or actual box example using the above specs-->
+
+      <h3>Padding</h3>
       <p>
-        While Te Houtaewa was filling his baskets with kumara he was spotted
-        stealing the kai (food). He was immediately recognised.
+        Padding is the space between the border and the content of the element.
+        It increases the inner space of the element. The first image has padding
+        of 5px and the second image has padding of 15 pixels, moving the border
+        further away from the element.
+      </p>
+      <!--<screenshot goes here> or actual box example using the above specs-->
+
+      <h3>Margin</h3>
+      <p>
+        Margin is the space outside the border. It creates distance between
+        different elements. This is helpful to set space between two elements on
+        a page, for example you might want some space between two images.
+      </p>
+      <!--<screenshot goes here> or actual box example using the above specs-->
+
+      <h3>In real terms</h3>
+      <p>
+        A helpful analogy I came across was thinking of a picture in a frame
+        hung on the wall. The photo itself is the element. The space between the
+        photo and the frame is the padding. The frame is the border and the
+        space between the edge of the frame and the next photo hanging on the
+        wall is margin.
+      </p>
+      <!--Image of picture frame goes here>-->
+      <h3>How to</h3>
+      <p>
+        To set the border, margin or padding of an element, we need to reference
+        the html element in the CSS. Going back to our analogy, we need to tell
+        the decorators which picture frame needs to be changed (linking the css
+        to html) and then how thick and what style the frame should be (border),
+        how far the photo should sit away from the inner frame (padding) and how
+        far the frame the next frame on the wall should be (margin). The CSS
+        code needed to change the border, margin and padding of an element can
+        be simplified to the lines below:
+      </p>
+      <!--Code snippet goes here-->
+      <p>
+        In this example, we have a div element with a light blue background.
+        We've added a green border of 2px, padding of 20px, and a margin of
+        15px. The result looks like this:
       </p>
     </div>
     <div class="articles-links-section">
