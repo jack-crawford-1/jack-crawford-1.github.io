@@ -1,10 +1,54 @@
-/* Styling for blog article pages*/
-
 * {
   box-sizing: border-box;
   margin: 0 auto;
-  font-family: monospace;
 }
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+}
+
+/*  Top Fixed Nav Bar*/
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.content-area {
+  display: flex;
+  margin-top: 60px;
+  width: 100%;
+}
+
+main {
+  flex: 3;
+  padding: 20px;
+  width: 90%;
+}
+
+/*  Header Section*/
 
 .article-header {
   height: auto;
@@ -16,6 +60,7 @@
   justify-content: center;
   color: white;
   text-align: center;
+  border-radius: 3px;
 }
 
 .article-header h1 {
@@ -23,12 +68,9 @@
   margin: 20px;
 }
 
-.article-content h2 {
-  font-size: 1.8rem;
-  line-height: 2rem;
-  width: 70%;
-  text-align: center;
-  margin-bottom: 30px;
+.article-header h2 {
+  font-size: 2rem;
+  margin: 20px;
 }
 
 .article-header h3 {
@@ -36,6 +78,8 @@
   line-height: 2rem;
   margin: 20px;
 }
+
+/*  Main Blog Article Section */
 
 .article-content {
   display: flex;
@@ -46,39 +90,67 @@
   margin-bottom: 50px;
 }
 
+.article-content h2 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
 .article-content h3 {
   font-size: 1.8rem;
   margin: 20px;
-  padding-top: 40px;
+  padding-top: 10px;
+  color: #232222;
 }
 
 .article-content p {
-  width: 60%;
+  width: 80%;
   font-size: 1.2rem;
   margin: 10px;
   line-height: 2rem;
 }
+
+/*  Styling for all nav links */
+
+main ul li {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-decoration: none;
+  list-style: none;
+  color: #0c56ab;
+}
+
+main ul li a {
+  text-decoration: none;
+  color: #0c56ab;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+/*  Styling for nav specific to bottom of the page */
 
 .articles-links-section {
   display: block;
   align-items: center;
   height: fit-content;
   padding-bottom: 100px;
-  text-align: center;
+  text-align: left;
+  margin: 0 30px;
 }
 
 .articles-links-section h2 {
   font-size: 2rem;
   padding-bottom: 30px;
-  margin-top: 10;
+  margin-top: 10px;
 }
 
-.articles-links-section li {
-  text-decoration: none;
-  list-style: none;
-  font-size: 1.2rem;
-  line-height: 2rem;
-}
+/*  Styling to make it appear as HTML/ CSS code on webpage */
 
 code {
   margin-bottom: 30px;
@@ -102,12 +174,10 @@ code {
   color: #033ea3;
 }
 
+/*  Blog Aticle Main Content */
+
 .example-container {
   margin-bottom: 40px;
-}
-
-#fill-colour {
-  background-color: lightblue;
 }
 
 .example-box {
@@ -131,6 +201,71 @@ code {
   border: 10px black dashed;
 }
 
+/*  Force one of the boxes to be lightblue */
+
+#fill-colour {
+  background-color: lightblue;
+}
+
+/* Images */
+
 img {
-  margin: 40px;
+  margin: 20px;
+  max-width: 50%;
+  min-width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Aside Section for links to other blogs*/
+
+aside {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+  line-height: 2rem;
+  margin-top: 20px;
+}
+
+aside h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+aside ul li {
+  margin-right: 20px;
+  list-style: none;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #0c56ab;
+  font-weight: 400;
+}
+
+aside ul li a:hover {
+  text-decoration: none;
+  color: #0c56ab;
+  font-weight: 700;
+}
+
+/* Small Screens */
+
+@media screen and (max-width: 768px) {
+  aside {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+  }
+}
+
+/* Footer*/
+
+footer {
+  background-color: #486192;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
