@@ -1,0 +1,56 @@
+/*  STYLING TO TRY REPLICATE THE LOOK OF HTML AND CSS IN A TEXT EDITOR */
+
+code {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.class-code {
+  color: #f707fb;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.class-selector {
+  color: #10a303;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-left: 15px;
+}
+
+.selected {
+  color: #033ea3;
+}
+
+/*  BOXES FOR VISUAL DEMO */
+
+.example-container {
+  margin-bottom: 40px;
+}
+
+.example-box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: lightblue;
+}
+
+.example-box-padding {
+  width: 240px;
+  height: 240px;
+  padding: 10px;
+  border: 10px solid black;
+}
+
+.example-box-margin {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  border: 10px black dashed;
+}
+
+/*  Force one of the boxes to be lightblue */
+
+#fill-colour {
+  background-color: lightblue;
+}
