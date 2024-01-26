@@ -167,6 +167,42 @@ img {
   color: #0c56ab;
 }
 
+/* Working CSS for boxes on homepage*/
+
+.all-links-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.all-links-box {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 250px;
+  background-color: #486192;
+  color: white;
+  margin: 10px;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.all-links-box:hover {
+  background-color: #6f8db3;
+}
+
+.all-links-box a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
 /* ASIDE SECTION FOR OTHER LINKS. NOT SHOWN ON MOBILE */
 
 aside {
