@@ -167,6 +167,11 @@ img {
   color: #0c56ab;
 }
 
+.links-section ul li a:hover {
+  color: #002c5e;
+  font-weight: 600;
+}
+
 /* Working CSS for boxes on homepage*/
 
 .all-links-container {
@@ -182,14 +187,15 @@ img {
 .all-links-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 200px;
-  width: 250px;
+  flex: 0 0 calc(33.333% - 60px);
   background-color: #486192;
   color: white;
   margin: 10px;
   border-radius: 15px;
   text-align: center;
-  justify-content: center;
   font-size: 2rem;
 }
 
@@ -281,5 +287,9 @@ footer {
     font-size: 1.4rem;
     margin-top: -10px;
     font-weight: 500;
+  }
+  .all-links-box {
+    flex: 0 0 60%;
+    margin: 10px 0;
   }
 }
