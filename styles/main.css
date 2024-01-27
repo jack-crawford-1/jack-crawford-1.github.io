@@ -292,4 +292,8 @@ footer {
     flex: 0 0 60%;
     margin: 10px 0;
   }
+  code {
+    max-width: 80%;
+    overflow: scroll;
+  }
 }

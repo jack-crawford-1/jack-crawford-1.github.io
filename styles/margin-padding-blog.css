@@ -4,8 +4,10 @@ code {
   margin-bottom: 30px;
   margin-top: 20px;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5rem;
+  background-color: #e8e8e8;
+  padding: 15px;
 }
 
 .class-code {
@@ -17,8 +19,20 @@ code {
   padding-left: 25px;
 }
 
+.class-selector-js {
+  color: #10a303;
+}
+
 .selected {
   color: #033ea3;
+}
+
+.code-commnents {
+  color: #abababc9;
+}
+
+.line-start {
+  margin-left: 35px;
 }
 
 /*  BOXES FOR VISUAL DEMO */
