@@ -5,13 +5,22 @@ code {
   margin-top: 20px;
   font-size: 1.1rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2rem;
   background-color: #e8e8e8;
   padding: 15px;
+  max-width: 80%;
 }
 
 .class-code {
   color: #f707fb;
+}
+
+.class-code-leader {
+  color: darkslateblue;
+}
+
+.class-code-red {
+  color: red;
 }
 
 .class-selector {
@@ -28,13 +37,16 @@ code {
 }
 
 .code-commnents {
-  color: #abababc9;
+  color: #8a8989d3;
 }
 
 .line-start {
   margin-left: 35px;
 }
 
+.js-text {
+  margin-left: 5px;
+}
 /*  BOXES FOR VISUAL DEMO */
 
 .example-container {

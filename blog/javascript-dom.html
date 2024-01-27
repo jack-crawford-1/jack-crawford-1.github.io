@@ -24,19 +24,29 @@
           <h3>JavaScript: Bringing Your Website to Life</h3>
           <p>
             Imagine you've just decorated a room (that's your HTML) and picked
-            the perfect lighting and paint colours(that's your CSS). Now, how do
-            you make it more than just a pretty space? That's where JavaScript
-            comes in. It's like adding smart devices to your room that react to
-            your actions.
+            the perfect lighting and paint colours (that's your CSS). Now, how
+            do you make it more than just a pretty space? That's where
+            JavaScript comes in. It's like adding smart devices to your room
+            that react to your actions.
           </p>
+          <p>
+            Below are some important concepts that allow for that room reaction
+          </p>
+          <img
+            src="/images/htmlvscss.png"
+            alt="html vs JavaScript relationship"
+          />
           <h2>Everyday Life and Programming Concepts</h2>
           <p>
             Think about your morning routine. You wake up, check the weather,
             and decide what to wear. This decision making process is like
-            control flow in programming. For something you do repeatedly, like
-            checking the lights are off in each room before leaving the house.
-            This repetition is similar to loops in JavaScript, where you perform
-            an action until a certain condition is met.
+            control flow in programming.
+          </p>
+          <p>
+            For something you do repeatedly, like checking the lights are off in
+            each room before leaving the house. This repetition is similar to
+            loops in JavaScript, where you perform an action until a certain
+            condition is met.
           </p>
           <p>
             The below example shows a simple countdown loop where we are telling
@@ -47,7 +57,7 @@
 
           <!--  LOOP EXAMPLE  -->
           <code>
-            <span class="class-code">for</span> (<span class="class-code"
+            <span class="class-code-leader">for</span> (<span class="class-code"
               >let</span
             >
             countdown = <span class="selected">4</span>; countdown >=
@@ -70,31 +80,74 @@
             room when you ask. JavaScript talks to this assistant to update your
             webpage without needing a full makeover.
           </p>
+          <p>
+            The below example shows how we can select all the paragraphs in a
+            HTML document and assign it to a variable, "paragraphs" in the
+            Javascript file. This allows us to change, add or remove all the
+            paragraphs without editing the HTML file
+          </p>
           <!--  ACCESSING THE DOM EXAMPLE  -->
-          <code> const paragraphs = document.querySelectorAll("p"); </code>
+          <code
+            ><span class="class-code">const</span
+            ><span class="js-text">paragraphs</span> =
+            <span class="class-selector-js">document</span>.<span
+              class="class-code-red"
+              >querySelectorAll</span
+            >("p");
+          </code>
           <h2>Arrays vs. Objects: Organising Your Data</h2>
           <p>
             Arrays and objects in JavaScript are like different storage
             solutions. Arrays are like an ordered bookshelf, where you find
-            books (elements) based on their position. Objects are like a
-            labelled drawer. You look for content based on labels, not
-            positions.
+            books (elements) based on their position.
+          </p>
+          <p>
+            This bookshelf is special because every slot for a book is numbered,
+            starting from 0 and going up. If you want to find the third book,
+            you don't need to know the title; you just go directly to slot 2
+            (since we started counting from 0) and grab it
           </p>
           <!--  ARRAYS EXAMPLE  -->
           <code>
-            let favoriteBooks = ["Harry Potter", "The Hobbit", "1984"]; // Here,
-            "Harry Potter" is in position 0, "The Hobbit" in position 1, and
-            "1984" in position 2. console.log(favoriteBooks[1]); // This will
-            log "The Hobbit" because it's in the second slot.
+            <span class="class-code">let</span> favoriteBooks = ["Harry Potter",
+            "The Hobbit", "1984"]; <br /><span class="code-commnents"
+              >// Here, "Harry Potter" is in position 0, "The Hobbit" in
+              position 1, and "1984" in position 2.</span
+            >
+            <br />console.<span class="class-selector-js">log</span
+            >(favoriteBooks[1]); <br /><span class="code-commnents"
+              >// This will log "The Hobbit" because it's in the second
+              slot.</span
+            >
           </code>
+          <p>
+            Now, consider you have a drawer where you keep all your
+            knick-knacks, but instead of remembering which item is in which
+            slot, you label each slot with the name of the item it contains.
+            When you need your phone, you don't look for it in the third slot;
+            you look for the slot labeled "phone."
+          </p>
+          <p>
+            This is what objects are like in JavaScript. They store data in
+            key-value pairs, where each key is like a label you can use to find
+            the corresponding value
+          </p>
 
           <!--  OBJECTS EXAMPLE  -->
           <code>
-            let gadgetDrawer = { phone: "iPhone", tablet: "iPad", watch: "Apple
-            Watch" }; // Here, each gadget is identified by a label (key), such
-            as "phone", "tablet", or "watch". console.log(gadgetDrawer.phone);
-            // This will log "iPhone" because that's the value associated with
-            the key "phone".
+            <span class="class-code">let</span> itemDrawer = { phone: "iPhone",
+            tablet: "iPad", watch: "Apple Watch" }; <br /><span
+              class="code-commnents"
+              >// Here, each item is identified by a label (key), such as
+              "phone", "tablet", or "watch".</span
+            >
+            <br />console.<span class="class-selector-js">log</span
+            >(itemDrawer.phone); <br />
+
+            <span class="code-commnents"
+              >// This will log "iPhone" because that's the value associated
+              with the key "phone".</span
+            >
           </code>
           <h2>Functions: Your Go-To Recipes</h2>
           <p>
@@ -104,16 +157,51 @@
             blocks that perform specific tasks, saving you from having to write
             more code.
           </p>
+
+          <code>
+            <span class="code-commnents"
+              >// A function to mix ingredients and return a cake</span
+            >
+            <br />bakeCake(flavour, icing) { <br /><span class="code-commnents"
+              >// mix the flavor and icing</span
+            ><br /><span class="class-code">let</span> cake = `A delicious
+            ${flavour} cake with ${icing} icing.`; <br />return cake;
+            <span class="code-commnents">// Return the final cake </span><br />}
+            <br /><span class="code-commnents">// following a recipe</span>
+            <br /><span class="class-code">let</span> myCake =
+            bakeCake("chocolate", "vanilla"); > <br />console.<span
+              class="class-selector-js"
+              >log</span
+            >(myCake);
+            <span class="code-commnents"
+              >// Logs: A delicious chocolate cake with vanilla icing.</span
+            >
+          </code>
+          <p>
+            Just as you might have recipes for everything from breakfast to
+            dinner, you can have functions for all sorts of tasks in
+            programming. Functions make your code more efficient, organised, and
+            reusable, just like how recipes make cooking more straightforward
+            and predictable.
+          </p>
         </div>
         <div class="links-section">
           <h2>See other Blogs</h2>
           <ul>
             <li><a href="/index.html">Go to Homepage</a></li>
             <li><a href="/blog/learning-plan.html">Learning Plan</a></li>
-            <li><a href="/blog/html-css.html">HTML CSS</a></li>
+            <li>
+              <a href="/blog/html-css.html">Borders, Margin and Padding</a>
+            </li>
             <li>
               <a href="/blog/identity-values.html">Identity and Values</a>
             </li>
+            <li>
+              <a href="/blog/emotional-intelligence.html"
+                >Emotional Intelligence</a
+              >
+            </li>
+            <li></li>
           </ul>
         </div>
       </main>

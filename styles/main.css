@@ -295,5 +295,6 @@ footer {
   code {
     max-width: 80%;
     overflow: scroll;
+    line-height: 1.5rem;
   }
 }
