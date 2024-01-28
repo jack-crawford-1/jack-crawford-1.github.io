@@ -123,6 +123,13 @@ header h3 {
   line-height: 2rem;
 }
 
+.article-ul {
+  width: 80%;
+  font-size: 1.2rem;
+  margin: 10px;
+  line-height: 2rem;
+}
+
 /*  UPDATE MAIN P WIDTH W/OUT IMPACTING BLOGS */
 #index-main-paragraph {
   width: 50%;
