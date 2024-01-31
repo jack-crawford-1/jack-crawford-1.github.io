@@ -139,6 +139,36 @@ header h3 {
   margin-left: 50px;
 }
 
+.article-content a {
+  text-decoration: none;
+  color: #0c56ab;
+}
+
+.hover-image {
+  display: none;
+}
+
+.article-content a:hover {
+ 
+  // When I click the link, it will go to a new youtube page
+}
+
+/* Display the hidden image when hover over the link to carol's name for large screens only otherwise nothing happens on hover*/
+
+/*  TODO NEED TO REMOVE FROM MAIN CSS FILE*/
+
+@media screen and (min-width: 1025px) {
+  .article-content a:hover::after {
+    content: url('/images/carol-d.jpg');
+    position: absolute;
+    top: 70%; 
+    z-index: 1000;
+    height: auto;
+  }
+}
+
+
+
 /*  UPDATE MAIN P WIDTH W/OUT IMPACTING BLOGS */
 #index-main-paragraph {
   width: 50%;
