@@ -236,6 +236,12 @@ aside {
   border-radius: 50px 5px 5px 50px;
 }
 
+.aside-content {
+  position: fixed;
+  overflow: scroll;
+  padding-left: 20px;
+}
+
 aside h3 {
   margin-top: 20px;
   margin-bottom: 20px;
