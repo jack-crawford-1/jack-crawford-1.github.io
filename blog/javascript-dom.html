@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8 /" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="/styles/margin-padding-blog.css" />
-    <title>JavaScript and the DOM</title>
-  </head>
-  <body>
-    <nav class="nav">
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="#">Blogs</a></li>
-      </ul>
-    </nav>
-    <div class="content-area">
-      <main>
-        <header class="article-header">
-          <h1>JavaScript and the DOM</h1>
-          <h3>27 January 2024</h3>
-        </header>
-        <div class="article-content">
-          <h3>JavaScript: Bringing Your Website to Life</h3>
-          <p>
-            Imagine you've just decorated a room (that's your HTML) and picked
-            the perfect lighting and paint colours (that's your CSS). Now, how
-            do you make it more than just a pretty space? That's where
-            JavaScript comes in. It's like adding smart devices to your room
-            that react to your actions.
-          </p>
-          <p>
-            Below are some important concepts that allow for that room reaction
-          </p>
-          <img
-            src="/images/htmlvscss.png"
-            alt="html vs JavaScript relationship"
-          />
-          <h2>Everyday Life and Programming Concepts</h2>
-          <p>
-            Think about your morning routine. You wake up, check the weather,
-            and decide what to wear. This decision making process is like
-            control flow in programming.
-          </p>
-          <p>
-            For something you do repeatedly, like checking the lights are off in
-            each room before leaving the house. This repetition is similar to
-            loops in JavaScript, where you perform an action until a certain
-            condition is met.
-          </p>
-          <p>
-            The below example shows a simple countdown loop where we are telling
-            the computer to start a loop at number 4 (let countdown = 4). Each
-            time the loop runs it will reduce the number by one (countdown--).
-            And then finally stop the loop when it reaches zero (countdown >= 0)
-          </p>
 
-          <!--  LOOP EXAMPLE  -->
-          <code>
+<head>
+  <meta charset="UTF-8 /" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="/styles/margin-padding-blog.css" />
+  <title>JavaScript and the DOM</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="#">Blogs</a></li>
+    </ul>
+  </nav>
+  <div class="content-area">
+    <main>
+      <header class="article-header">
+        <h1>JavaScript and the DOM</h1>
+        <h3>27 January 2024</h3>
+      </header>
+      <div class="article-content">
+        <h3>JavaScript: Bringing Your Website to Life</h3>
+        <p>
+          Imagine you've just decorated a room (that's your HTML) and picked
+          the perfect lighting and paint colours (that's your CSS). Now, how
+          do you make it more than just a pretty space? That's where
+          JavaScript comes in. It's like adding smart devices to your room
+          that react to your actions.
+        </p>
+        <p>
+          Below are some important concepts that allow for that room reaction
+        </p>
+        <img src="/images/htmlvscss.png" alt="html vs JavaScript relationship" />
+        <h2>Everyday Life and Programming Concepts</h2>
+        <p>
+          Think about your morning routine. You wake up, check the weather,
+          and decide what to wear. This decision making process is like
+          control flow in programming.
+        </p>
+        <p>
+          For something you do repeatedly, like checking the lights are off in
+          each room before leaving the house. This repetition is similar to
+          loops in JavaScript, where you perform an action until a certain
+          condition is met.
+        </p>
+        <p>
+          The below example shows a simple countdown loop where we are telling
+          the computer to start a loop at number 4 (let countdown = 4). Each
+          time the loop runs it will reduce the number by one (countdown--).
+          And then finally stop the loop when it reaches zero (countdown >= 0)
+        </p>
+
+        <!--  LOOP EXAMPLE  -->
+        <code>
             <span class="class-code-leader">for</span> (<span class="class-code"
               >let</span
             >
@@ -72,43 +71,42 @@
             >);<br />}
           </code>
 
-          <h2>The DOM: Your Page's Personal Helper</h2>
-          <p>
-            Ever wondered how clicking a button on a webpage can magically
-            change what you see? That's the DOM (Document Object Model) in
-            action! It's like having a personal assistant who rearranges your
-            room when you ask. JavaScript talks to this assistant to update your
-            webpage without needing a full makeover.
-          </p>
-          <p>
-            The below example shows how we can select all the paragraphs in a
-            HTML document and assign it to a variable, "paragraphs" in the
-            Javascript file. This allows us to change, add or remove all the
-            paragraphs without editing the HTML file
-          </p>
-          <!--  ACCESSING THE DOM EXAMPLE  -->
-          <code
-            ><span class="class-code">const</span
+        <h2>The DOM: Your Page's Personal Helper</h2>
+        <p>
+          Ever wondered how clicking a button on a webpage can magically
+          change what you see? That's the DOM (Document Object Model) in
+          action! It's like having a personal assistant who rearranges your
+          room when you ask. JavaScript talks to this assistant to update your
+          webpage without needing a full makeover.
+        </p>
+        <p>
+          The below example shows how we can select all the paragraphs in a
+          HTML document and assign it to a variable, "paragraphs" in the
+          Javascript file. This allows us to change, add or remove all the
+          paragraphs without editing the HTML file
+        </p>
+        <!--  ACCESSING THE DOM EXAMPLE  -->
+        <code><span class="class-code">const</span
             ><span class="js-text">paragraphs</span> =
             <span class="class-selector-js">document</span>.<span
               class="class-code-red"
               >querySelectorAll</span
             >("p");
           </code>
-          <h2>Arrays vs. Objects: Organising Your Data</h2>
-          <p>
-            Arrays and objects in JavaScript are like different storage
-            solutions. Arrays are like an ordered bookshelf, where you find
-            books (elements) based on their position.
-          </p>
-          <p>
-            This bookshelf is special because every slot for a book is numbered,
-            starting from 0 and going up. If you want to find the third book,
-            you don't need to know the title; you just go directly to slot 2
-            (since we started counting from 0) and grab it
-          </p>
-          <!--  ARRAYS EXAMPLE  -->
-          <code>
+        <h2>Arrays vs. Objects: Organising Your Data</h2>
+        <p>
+          Arrays and objects in JavaScript are like different storage
+          solutions. Arrays are like an ordered bookshelf, where you find
+          books (elements) based on their position.
+        </p>
+        <p>
+          This bookshelf is special because every slot for a book is numbered,
+          starting from 0 and going up. If you want to find the third book,
+          you don't need to know the title; you just go directly to slot 2
+          (since we started counting from 0) and grab it
+        </p>
+        <!--  ARRAYS EXAMPLE  -->
+        <code>
             <span class="class-code">let</span> favoriteBooks = ["Harry Potter",
             "The Hobbit", "1984"]; <br /><span class="code-commnents"
               >// Here, "Harry Potter" is in position 0, "The Hobbit" in
@@ -120,21 +118,21 @@
               slot.</span
             >
           </code>
-          <p>
-            Now, consider you have a drawer where you keep all your
-            knick-knacks, but instead of remembering which item is in which
-            slot, you label each slot with the name of the item it contains.
-            When you need your phone, you don't look for it in the third slot;
-            you look for the slot labeled "phone."
-          </p>
-          <p>
-            This is what objects are like in JavaScript. They store data in
-            key-value pairs, where each key is like a label you can use to find
-            the corresponding value
-          </p>
+        <p>
+          Now, consider you have a drawer where you keep all your
+          knick-knacks, but instead of remembering which item is in which
+          slot, you label each slot with the name of the item it contains.
+          When you need your phone, you don't look for it in the third slot;
+          you look for the slot labeled "phone."
+        </p>
+        <p>
+          This is what objects are like in JavaScript. They store data in
+          key-value pairs, where each key is like a label you can use to find
+          the corresponding value
+        </p>
 
-          <!--  OBJECTS EXAMPLE  -->
-          <code>
+        <!--  OBJECTS EXAMPLE  -->
+        <code>
             <span class="class-code">let</span> itemDrawer = { phone: "iPhone",
             tablet: "iPad", watch: "Apple Watch" }; <br /><span
               class="code-commnents"
@@ -149,16 +147,16 @@
               with the key "phone".</span
             >
           </code>
-          <h2>Functions: Your Go-To Recipes</h2>
-          <p>
-            Functions in JavaScript are like your favourite recipes. They're a
-            set of instructions you keep handy and reuse whenever you need to
-            whip up that dish again. Similarly, functions in coding are reusable
-            blocks that perform specific tasks, saving you from having to write
-            more code.
-          </p>
+        <h2>Functions: Your Go-To Recipes</h2>
+        <p>
+          Functions in JavaScript are like your favourite recipes. They're a
+          set of instructions you keep handy and reuse whenever you need to
+          whip up that dish again. Similarly, functions in coding are reusable
+          blocks that perform specific tasks, saving you from having to write
+          more code.
+        </p>
 
-          <code>
+        <code>
             <span class="code-commnents"
               >// A function to mix ingredients and return a cake</span
             >
@@ -177,52 +175,53 @@
               >// Logs: A delicious chocolate cake with vanilla icing.</span
             >
           </code>
-          <p>
-            Just as you might have recipes for everything from breakfast to
-            dinner, you can have functions for all sorts of tasks in
-            programming. Functions make your code more efficient, organised, and
-            reusable, just like how recipes make cooking more straightforward
-            and predictable.
-          </p>
-        </div>
-        <div class="links-section">
-					<h2>See other Blogs</h2>
-					<ul>
-						<li><a href="/index.html">Go to Homepage</a></li>
-						<li><a href="/blog/html-css.html">Border, Padding and Margin</a></li>
-            <li><a href="/blog/identity-values.html">Identity and Values</a></li>
-            <li><a href="/blog/learning-plan.html">Learning Plan</a></li>
-            <li><a href="/blog/emotional-intelligence.html">Emotional Intelligence</a></li>
-            <li><a href="/blog/javascript-dom.html">JavaScript Fundementals</a></li>
-            <li><a href="/blog/neuroplasticity.html">Neuroplasticity and growth mindset</a></li>
-            <li><a href="/blog/te-whare-tapa-wha.html">Te whare tapa whā</a></li>
-            <li><a href="/blog/problem-solving.html">Problem Solving</a></li>
-					</ul>
-				</div>
-      </main>
-      <aside>
-        <div class="aside-content">
-        <h3>Tech Fundimentals</h3>
-				<ul>
-					<li><a href="/blog/html-css.html">Border, Padding and Margin</a></li>
-					<li><a href="/blog/javascript-dom.html">JavaScript Fundementals</a></li>
-          <li><a href="/blog/problem-solving.html">Problem Solving</a></li>
-				</ul>
-				<h3>Core Learnings</h3>
-				<ul>
-          <li><a href="/blog/te-houtaewa-template.html">Te Houtaewa</a></li>
+        <p>
+          Just as you might have recipes for everything from breakfast to
+          dinner, you can have functions for all sorts of tasks in
+          programming. Functions make your code more efficient, organised, and
+          reusable, just like how recipes make cooking more straightforward
+          and predictable.
+        </p>
+      </div>
+      <div class="links-section">
+        <h2>See other Blogs</h2>
+        <ul>
+          <li><a href="/index.html">Go to Homepage</a></li>
+          <li><a href="/blog/html-css.html">Border, Padding and Margin</a></li>
           <li><a href="/blog/identity-values.html">Identity and Values</a></li>
-					<li><a href="/blog/learning-plan.html">Learning Plan</a></li>
-					<li><a href="/blog/emotional-intelligence.html">Emotional Intelligence</a></li>
+          <li><a href="/blog/learning-plan.html">Learning Plan</a></li>
+          <li><a href="/blog/emotional-intelligence.html">Emotional Intelligence</a></li>
+          <li><a href="/blog/javascript-dom.html">JavaScript Fundementals</a></li>
           <li><a href="/blog/neuroplasticity.html">Neuroplasticity and growth mindset</a></li>
           <li><a href="/blog/te-whare-tapa-wha.html">Te whare tapa whā</a></li>
-				</ul>
+          <li><a href="/blog/problem-solving.html">Problem Solving</a></li>
+        </ul>
       </div>
-			</aside>
-    </div>
+    </main>
+    <aside>
+      <div class="aside-content">
+        <h3>Tech Fundimentals</h3>
+        <ul>
+          <li><a href="/blog/html-css.html">Border, Padding and Margin</a></li>
+          <li><a href="/blog/javascript-dom.html">JavaScript Fundementals</a></li>
+          <li><a href="/blog/problem-solving.html">Problem Solving</a></li>
+        </ul>
+        <h3>Core Learnings</h3>
+        <ul>
+          <li><a href="/blog/te-houtaewa-template.html">Te Houtaewa</a></li>
+          <li><a href="/blog/identity-values.html">Identity and Values</a></li>
+          <li><a href="/blog/learning-plan.html">Learning Plan</a></li>
+          <li><a href="/blog/emotional-intelligence.html">Emotional Intelligence</a></li>
+          <li><a href="/blog/neuroplasticity.html">Neuroplasticity and growth mindset</a></li>
+          <li><a href="/blog/te-whare-tapa-wha.html">Te whare tapa whā</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
 
-    <footer>
-      <p>Jack Crawford 2024</p>
-    </footer>
-  </body>
+  <footer>
+    <p>Jack Crawford 2024</p>
+  </footer>
+</body>
+
 </html>
