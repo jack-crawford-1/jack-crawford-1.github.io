@@ -29,29 +29,23 @@
           object (the gradebook) which held an array of test results for a group of students.
         </p>
         <p>Giving the gradebook a new empty object was straightforward:</p>
-
         <code>
           gradebook {}
-        </code>
-
+          </code>
         <p>So was (with a bit of looking back) adding each student to the gradebook object.
-          This loops through the students array and adds it to the gradebook object:</p>
-
+          This loops through the students array and adds it to the gradebook object:
+        </p>
         <code>
           students<span class="class-code ">.forEach</span>((student) => {
           gradebook[student] = {};
           })
-        </code>
-
-
+          </code>
         <p>But I got stuck here. The task now was to add scores to each student in the gradebook.</p>
-
         <code>
           scores<span class="class-code ">.forEach</span>((testScore) => {
           gradebook[students[testScore]] = {scores};
           });
-        </code>
-
+          </code>
         <p>The `testScore` isn't a single score; it's actually an array of scores for one student since `scores` is an
           array of arrays.
           Also, the way I had assigned to {scores} wasn't right. This ended up creating an object with a property
@@ -59,84 +53,71 @@
           that contained the entire `scores` array, instead of just the individual student's scores.
           I had assumed testScore could directly index students, and misunderstood how to correctly assign scores to
           each
-          student.</p>
-
+          student.
+        </p>
         <p>What I needed to do was match each student with their corresponding array of scores.</p>
-
         <code>
           students<span class="class-code ">.forEach</span>((student, index) => {
-        gradebook[student].testScores = scores[index];
-        })
-        </code>
-
+          gradebook[student].testScores = scores[index];
+          })
+          </code>
         <p>I had gone to Google, which would have likely given me the answers I needed, but I wan't exactlty sure the
           solution I was looking for. I then went back and skimmed the previous videos hoping to come across something
-          that would give me that lightbulb moment.</p>
-
+          that would give me that lightbulb moment.
+        </p>
         <p>I could have spent hours going in circles without spotting the glaring fundemental issue with my code, but
           instead I reached out to the Dev Academy Discord server to get a sense-check if I was heading in the right
           direction. Gerard pointed out the points above, and that a slightly different approach should get a better
-          result.</p>
-
+          result.
+        </p>
         <img src="/images/help.jpg" alt="Discord HeLp Channel">
-
         <p>In hindsight, sharing roadblocks earlier with others in my course would have been a great way to get
           perspective
           on a problem, allowing me to refocus. Concerns around appearing "dumb" (conscious and unconscious), are one of
           the bigger barriers and one that I'll need to keep reminding myself to be mindful of. Even though it's easy to
           forget, it's nice to know that others in the cohort are having similar challenges and have been able to
           overcome
-          them, showing it can be done.</p>
-
-
+          them, showing it can be done.
+        </p>
         <h3> Elegantly Solving a Problem</h3>
-
         <p>
           The task was to create a digital representation of a family tree starting with an individual named Terah. We
           began with:
         </p>
-
         <code>
-        <span class="class-code-red">let</span> terah = {
+          <span class="class-code-red">let</span> terah = {
           name: 'Terah',
           age: 32,
           height: 172,
           hairColor: 'brown'
-        }
+          }
           </code>
-
         <p>
           From here, we needed to expand Terah's world to include relationships and life changes. Enter Adam. He starts
           as a blank slate (empty object)
         </p>
-
         <code>
           <span class="class-code-red">let</span> adam = {}
-        </code>
-
+          </code>
         <p>
           We then define Adam by giving him a name and connecting him to Terah:
         </p>
-
         <code>
           adam.name = "Adam";
           adam.spouse = terah;
-        </code>
-
+          </code>
         <p>
           It makes sense that if Adam is connected to Terah, then Terah is also linked to Adam
         </p>
-
         <code>
           terah.spouse = adam;
           terah.age = 33;
-        </code>
+          </code>
         <p>
           Through these steps, we've not only captured data but also told a demonstrated a real-world story of
-          relationships.. We've shown that objects in JavaScript are more than just containers for values but instead,
+          relationships. We've shown that objects in JavaScript are more than just containers for values but instead,
           are the building blocks for narratives.
         </p>
-
         <h3> how confident you feel using each of these problem-solving techniques/processes</h3>
         <ul>
           <li>Pseudocode</li>
@@ -150,7 +131,8 @@
           <li>Improving your process with reflection</li>
         </ul>
         <h3>Reflect on a time you were reluctant to ask for help. Consider what made you reluctant to do so. What might
-          you try differently next time</h3>
+          you try differently next time
+        </h3>
         <p>
           TBC
         </p>
@@ -190,7 +172,6 @@
       </div>
     </aside>
   </div>
-
   <footer>
     <p>Jack Crawford 2024</p>
   </footer>
