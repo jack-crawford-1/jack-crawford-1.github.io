@@ -248,6 +248,7 @@ img {
 
 .tile-image {
   transition: transform 0.2s ease;
+  min-height: 500px;
 }
 
 .tile-image:hover {
